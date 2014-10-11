@@ -77,4 +77,8 @@ Pinteresting::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+#required for heroku
+#note to set this to your actual host
+config.action.default_url_options = { :host => 'lesliepinteresting.herokuapp.com' }
+
 end
