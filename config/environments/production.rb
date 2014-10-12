@@ -79,6 +79,6 @@ Pinteresting::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 #required for heroku
 #note to set this to your actual host
-config.action.default_url_options = { :host => 'lesliepinteresting.herokuapp.com' }
+config.action_mailer.default_url_options = { :host => 'http://lesliepinteresting.herokuapp.com/' }
 
 end
